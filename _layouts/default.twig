@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <title>Tomáš a Honza nejen o PHP</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tomáš a Honza nejen o PHP">
+        <meta name="keywords" content="podcast, php, programování">
+        <meta name="author" content="http://nejenophp.cz">
+        <meta name="robots" content="index, follow">
+
+        <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Tomáš a Honza nejen o PHP - RSS dílů
+        podcastu" />
+
+        {#<meta property="og:image" content="images/...">#}
+
+        {# Twitter Bootstrap #}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        {# fonts #}
+        <script src="https://use.fontawesome.com/d49c7fe01d.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet"
+              type="text/css">
+
+        {# css #}
+        <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet">
+
+        <link href="{{ site.url }}/favicon.ico" rel="shortcut icon">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        {% block socialTags %}
+        {% endblock %}
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center">
+                <img style="margin-top: 10px" src="/assets/images/headline.svg" alt="Tomáš a Honza – Nejen o PHP">
+            </h1>
+
+            <p class="text-center headline">
+                <i class="fa fa-blind fa-fw" aria-hidden="true"></i>
+                Provedeme tě světem informací, abys z toho něco měl.
+                <br>
+                <strong>Jednou za měsíc</strong> &ndash; <strong>30 minut</strong>. To dáš!
+            </p>
+        </div>
+
+        <hr>
+
+        {% block content_wrapper %}
+            {% block content %}{% endblock %}
+        {% endblock %}
+
+        <footer>
+            <div class="container">
+                <p>
+                    <strong>Máme něco špatně?</strong> No to je ostuda. Oprav nám to prosím - <a href="https://github.com/nejenophp/nejenophp.cz/tree/master/source">pošli PR na Githubu</a>.
+                </p>
+                <p>
+                    <strong>Ještě nás neznáš?</strong>
+                    <a href="http://tomasvotruba.cz">Tomáš Votruba</a> a <a href="http://honzacerny.com">Honza Černý</a>
+                        mají vlastní mobilní internetovou vizitku. Tak se na ně mrkni.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

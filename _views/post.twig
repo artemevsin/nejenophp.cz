@@ -1,0 +1,67 @@
+{% extends "default" %}
+
+{% block content_wrapper %}
+
+<div class="page">
+    <div class="container">
+        <div class="main">
+            <h2>{{ page.title }}</h2>
+
+            <p class="perex">{{ page.perex|raw }}</p>
+
+            <p>
+                <a href="{{ page.podcast.mp3_url }}">Stáhni si mp3</a> nebo <strong>mrkni na video - má časované
+                body ↓</strong>
+            </p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    {{ page.blocks.content|raw }}
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <iframe width="560" height="315" src="{{ page.podcast.youtube_embed_url }}" frameborder="0" allowfullscreen name="video"></iframe>
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Nesouhlasíš s námi? Pověz nám to!</h3>
+
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                 */
+                (function() {  // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+
+                    s.src = '//nejenophp.disqus.com/embed.js';
+
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+
+            <br>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block socialTags %}
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.perex }}" />
+    <meta property="og:image" content="/assets/images/headline.jpg" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.perex }}" />
+    <meta name="twitter:image" content="/assets/images/headline.jpg" />
+{% endblock %}

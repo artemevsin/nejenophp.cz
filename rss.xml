@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:feedpress="https://feed.press/xmlns" version="2.0">
+    <channel>
+        <feedpress:locale>cs</feedpress:locale>
+        <feedpress:newsletterId>nejenophp</feedpress:newsletterId>
+        <atom:link rel="self" href="http://nejenophp.cz/rss.xml" />
+
+        <title><![CDATA[Tomáš a Honza nejen o PHP]]></title>
+        <link><![CDATA[https://www.youtube.com/watch?list=PLqRXa8pInSUqxMhNhzJsV-1_FZ-YsrSYM&v=1BjVVGmSdCw]]></link>
+        <language>cs</language>
+        <copyright><![CDATA[© 2016 Tomáš Votruba and Honza Černý]]></copyright>
+        <description><![CDATA[Povídání o všem možném kolem PHP, komunit, vzdělání a firem u nás.]]></description>
+
+        <itunes:subtitle><![CDATA[Tomáš a Honza si povídají nejen o PHP]]></itunes:subtitle>
+        <itunes:author><![CDATA[Tomáš a Honza]]></itunes:author>
+        <itunes:summary><![CDATA[Povídání o všem možném kolem PHP, komunit, vzdělání a firem u nás.]]></itunes:summary>
+        <itunes:owner>
+            <itunes:name>Tomáš Votruba</itunes:name>
+            <itunes:email>info@tomasvotruba.cz</itunes:email>
+        </itunes:owner>
+        <itunes:image href="http://nejenophp.cz/assets/images/headline.png"/>
+        <itunes:category text="Technology"/>
+        <itunes:explicit>clean</itunes:explicit>
+
+                    <item>
+                <title>Tomáš a Honza nejen o PHP #1 - O sebevzdělání, školení, brandovaném obsahu a mentoringu</title>
+                <enclosure url="http://cdn.nejenophp.cz/nejen-o-php-1.mp3" length="65104529" type="audio/mpeg"/>
+                <guid>/2016/08/15/dil-1-poslechni-si-o-sebevzdelavani-skoleni-a-mentoringu</guid>
+                <pubDate>Mon, 15 Aug 2016 11:00:00 +0000</pubDate>
+                <description>Poslední půlrok u nás vzniká spousta možností, jak se vzdělávat v PHP. A zadarmo.&lt;br&gt; &lt;strong&gt;Kdo je pořádá? Proč na ně nění takový nával? A jak by tomu mohl pomoc mentoring?&lt;/strong&gt;&lt;br&gt; O tom všem se dnes pobavíme.
+</description>
+
+                <itunes:subtitle>Poslední půlrok u nás vzniká spousta možností, jak se vzdělávat v PHP. A zadarmo.&lt;br&gt; &lt;strong&gt;Kdo je pořádá? Proč na ně nění takový nával? A jak by tomu mohl pomoc mentoring?&lt;/strong&gt;&lt;br&gt; O tom všem se dnes pobavíme.
+</itunes:subtitle>
+                <itunes:author><![CDATA[Tomáš a Honza nejen o PHP]]></itunes:author>
+                <itunes:image href="http://nejenophp.cz/assets/images/headline.png"/>
+                <itunes:duration>33:39</itunes:duration>
+            </item>
+            </channel>
+</rss>
